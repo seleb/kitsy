@@ -1,0 +1,76 @@
+{
+  "program": {
+    "fileInfos": {
+      "../node_modules/typescript/lib/lib.d.ts": {
+        "version": "2dc8c927c9c162a773c6bb3cdc4f3286c23f10eedc67414028f9cb5951610f60",
+        "signature": "2dc8c927c9c162a773c6bb3cdc4f3286c23f10eedc67414028f9cb5951610f60",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b3584bc5798ed422ce2516df360ffa9cf2d80b5eae852867db9ba3743145f895",
+        "signature": "b3584bc5798ed422ce2516df360ffa9cf2d80b5eae852867db9ba3743145f895",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
+        "signature": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "signature": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "affectsGlobalScope": true
+      },
+      "../src/index.ts": {
+        "version": "1e850feac6ca4f1e54400a893c45c77390c97a2a9d973209e81a67c7bcab1452",
+        "signature": "16d9da5bc8c0ccd15c77036152b1c0712480a154e0c2939f605214cb9eae6f44",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 0,
+      "outDir": "./main",
+      "rootDir": "../src",
+      "moduleResolution": 2,
+      "module": 1,
+      "declaration": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "traceResolution": false,
+      "listEmittedFiles": false,
+      "listFiles": false,
+      "pretty": true,
+      "types": [],
+      "typeRoots": [
+        "../node_modules/@types",
+        "../src/types"
+      ],
+      "project": "../tsconfig.json",
+      "configFilePath": "../tsconfig.json"
+    },
+    "referencedMap": {},
+    "exportedModulesMap": {},
+    "semanticDiagnosticsPerFile": [
+      "../node_modules/typescript/lib/lib.d.ts",
+      "../node_modules/typescript/lib/lib.dom.d.ts",
+      "../node_modules/typescript/lib/lib.es5.d.ts",
+      "../node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../src/index.ts"
+    ]
+  },
+  "version": "4.2.4"
+}
