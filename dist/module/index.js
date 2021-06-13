@@ -1,4 +1,3 @@
-/* eslint-disable no-var, prefer-rest-params */
 /**
  * Helper used to replace code in a script tag based on a search regex.
  * To inject code without erasing original string, using capturing groups; e.g.
