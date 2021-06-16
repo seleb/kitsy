@@ -1,6 +1,6 @@
 {
   "name": "kitsy",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Monkey-patching toolkit to make it easier and cleaner to run code before and after functions or to inject new code into script tags",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",

@@ -13,7 +13,7 @@ declare function kitsyInject(searcher: Parameters<typeof inject>[0], replacer: P
 declare function before(targetFuncName: string, beforeFn: () => void): void;
 declare function after(targetFuncName: string, afterFn: () => void): void;
 declare function applyInjects(): void;
-declare function applyHooks(): void;
+declare function applyHooks(this: unknown, root?: unknown): void;
 interface Kitsy {
     queuedInjectScripts: {
         searcher: Parameters<typeof kitsyInject>[0];
