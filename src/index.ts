@@ -86,14 +86,14 @@ function applyInjects() {
 	});
 }
 
-function applyHooks() {
+function applyHooks(this: unknown, root?: unknown) {
 	var allHooks = unique(Object.keys(kitsy.queuedBeforeScripts).concat(Object.keys(kitsy.queuedAfterScripts)));
-	allHooks.forEach(applyHook);
+	allHooks.forEach(applyHook.bind(this, root || window));
 }
 
-function applyHook(functionName: string) {
+function applyHook(this: unknown, root: unknown, functionName: string) {
 	var functionNameSegments = functionName.split('.');
-	var obj: any = window;
+	var obj: any = root;
 	while (functionNameSegments.length > 1) {
 		obj = obj[functionNameSegments.shift() as string];
 	}
