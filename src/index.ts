@@ -7,7 +7,7 @@
  * @param searcher Regex to search and replace
  * @param replacer Replacer string/fn
  */
- function inject(searcher: Parameters<string['replace']>[0] & Parameters<string['search']>[0], replacer: Parameters<string['replace']>[1]) {
+function inject(searcher: Parameters<string['replace']>[0] & Parameters<string['search']>[0], replacer: Parameters<string['replace']>[1]) {
 	// find the relevant script tag
 	var scriptTags = document.getElementsByTagName('script');
 	var scriptTag: HTMLScriptElement | undefined;
@@ -47,7 +47,6 @@ function unique<T>(array: T[]) {
 		return array.indexOf(item) === idx;
 	});
 }
-
 
 // Ex: inject(/(names.sprite.set\( name, id \);)/, '$1console.dir(names)');
 /** test */
