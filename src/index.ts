@@ -93,6 +93,7 @@ function applyHooks(this: unknown, root?: unknown) {
 
 function applyHook(this: unknown, root: unknown, functionName: string) {
 	var functionNameSegments = functionName.split('.');
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	var obj: any = root;
 	while (functionNameSegments.length > 1) {
 		obj = obj[functionNameSegments.shift() as string];
@@ -116,7 +117,7 @@ function applyHook(this: unknown, root: unknown, functionName: string) {
 		var args = [].slice.call(arguments);
 		var i = 0;
 
-		function runBefore(this: any): unknown {
+		function runBefore(this: unknown): unknown {
 			// All outta functions? Finish
 			if (i === functions.length) {
 				return returnVal;
