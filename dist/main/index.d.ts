@@ -14,7 +14,7 @@ declare function before(targetFuncName: string, beforeFn: () => void): void;
 declare function after(targetFuncName: string, afterFn: () => void): void;
 declare function applyInjects(): void;
 declare function applyHooks(this: unknown, root?: unknown): void;
-interface Kitsy {
+export interface Kitsy {
     queuedInjectScripts: {
         searcher: Parameters<typeof kitsyInject>[0];
         replacer: Parameters<typeof kitsyInject>[1];
