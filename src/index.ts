@@ -144,7 +144,7 @@ function applyHook(this: unknown, root: unknown, functionName: string) {
 	};
 }
 
-interface Kitsy {
+export interface Kitsy {
 	queuedInjectScripts: { searcher: Parameters<typeof kitsyInject>[0]; replacer: Parameters<typeof kitsyInject>[1] }[];
 	queuedBeforeScripts: Record<string, ((...args: unknown[]) => unknown)[]>;
 	queuedAfterScripts: Record<string, ((...args: unknown[]) => unknown)[]>;
